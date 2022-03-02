@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./fonts/fontawesome-free-6.0.0-web/css/all.min.css">
+    <title>Vào bếp</title>
+    <style>
+         * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        ul {
+            list-style: none;
+
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        li {
+            list-style: none;
+        }
+
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        header {
+            background-color: #0078BB;
+            text-align: center;
+            border-radius: 2px;
+
+        }
+
+        .logo img {
+            width: 130px;
+            height: 50px;
+        }
+
+        nav {
+            background-color: #009DE0;
+            height: 50px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav li,
+        a {
+            color: white;
+            font-size: 12px;
+        }
+
+        .ĐL i {
+            font-size: 12px;
+            margin-left: 5px;
+            color: white;
+        }
+
+        .ĐL a,
+        i:hover {
+            color: #fff200;
+        }
+
+        .search {
+            position: relative;
+        }
+
+        .search input {
+            height: 30px;
+            width: 100%;
+            border-radius: 5px;
+            padding-left: 6px;
+            outline: none;
+        }
+
+        .search i {
+            position: absolute;
+            font-size: 15px;
+            right: 12px;
+            color: rgb(99, 96, 96);
+            line-height: 30px;
+        }
+
+        .giohang button {
+            height: 35px;
+            width: 100%;
+            padding: 0 10px;
+            background-color: #009DE0;
+            color: white;
+            border: 1px solid rgb(214, 214, 214);
+            border-radius: 5px;
+        }
+
+        .giohang button:hover {
+            background-color: #deebf165;
+        }
+
+        .giohang button i {
+            margin-right: 10px;
+            color: white;
+        }
+
+        .ĐH {
+            text-align: center;
+        }
+
+        .ĐH a:hover {
+            color: #fff200;
+        }
+
+        .nap :hover {
+            color: #fff200;
+        }
+
+        .nap i {
+            margin-right: 5px;
+            font-size: 15px;
+            color: white;
+        }
+
+        .TV :hover {
+            color: #fff200;
+        }
+
+        .KM :hover {
+            color: #fff200;
+        }
+
+        .Bep :hover {
+            color: #fff200;
+        }
+        section{
+            width: 100%;
+            max-width: 1200px;
+            min-height: 1024px;
+            margin: auto;
+            position: relative;
+        }
+        .menu-cook{
+            display: block;
+            position: relative;
+        }
+        h1 {
+         display: block;
+         overflow: hidden;
+         font-weight: 600;
+         padding: 20px 15px;
+         font-size: 22px;
+        line-height: 28px;
+         color: #333;
+        }
+        .menu-cook ul{
+            display: flex;
+            flex-flow: row wrap;
+            overflow: hidden;
+            height: auto;
+        }
+        .menu-cook ul li{
+            float: left;
+            width: 9.61%;
+            margin: 0 1.5% 1.5% 0;
+        }
+        .menu-cook ul li a{
+            display: block;
+            overflow: hidden;
+            color: #333;
+            text-align: center;
+            font-size: 15px;
+        }
+        .menu-cook ul  a img{
+            display: block;
+            overflow: hidden;
+             margin: 5px auto;
+             border-radius: 50%;
+             border: 3px solid #fff;
+             width: 80px;
+             height: 80px;
+        }
+        .highlights{
+            display: block;
+            overflow: hidden;
+        }
+        .highlights  h2 {
+    display: block;
+    overflow: hidden;
+    font-weight: 600;
+    padding: 20px 15px;
+    font-size: 22px;
+    line-height: 28px;
+    color: #000;
+}
+.highlights h2 i {
+    display: inline-block;
+    vertical-align: bottom;
+    margin: 0 8px 4px 0;
+}
+
+.cate-cook {
+    display: flex;
+    flex-flow: row wrap;
+    overflow: hidden;
+}
+
+.cate-cook li {
+    float: left;
+    width: 31.33%;
+    margin: 1% 1% 1% 1%;
+}
+
+.cate-cook li a {
+    display: block;
+    overflow: hidden;
+   background-color: rgba(240, 232, 232, 0.966);
+    border-radius: 12px;
+}
+
+.cate-cook li .imgdish {
+    height: 326px;
+    border-radius: 0;
+
+}
+
+.cate-cook li a strong {
+   
+    font-size: 16px;
+    line-height: 24px;
+    padding: 15px;
+    height: 44px;
+    color: #000;
+    
+}
+.cate-cook li .imgdish img{
+    height: 300px;
+    width: 376px;
+}
+
+.cate-cook li a .time {
+    display: block;
+    overflow: hidden;
+    padding: 0 0 20px;
+}
+.cate-cook li .time span {
+    float: left;
+    overflow: hidden;
+    font-size: 13px;
+    color: #666;
+    padding: 5px 0 0 15px;
+    width: 60%
+}
+button{
+    width: 443px;
+    height: 46px;
+    border: 1px solid #0078BB;
+    color: #0078BB;
+}
+.xemthem{
+    text-align: center;
+    padding: 20px;
+    
+}
+button:hover{
+    background-color: #80c2dfa1;
+}
+/* footer */
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/DMX.png" alt="">
+    </header>
+    <nav>
+        <div class="container">
+            <ul>
+
+                <li class=" logo ">
+                    <a href="">
+                        <img src="images/logoDMX.png" alt="">
+                    </a>
+                </li>
+                <li class="ĐL">
+                    <a href="form.html">Đăk Lăk<i class="ti-arrow-circle-down"></i></a>
+                </li>
+                <li class="search">
+                    <input type="text" placeholder="Bạn tìm gì..?"><i class="ti-search"></i>
+                </li>
+                <li class="giohang">
+                    <a href=""><button><i class="fa-solid fa-cart-shopping"></i>Giỏ hàng</button></a>
+                </li>
+                <li class="ĐH"><a href="">Lịch sử <br> đơn hàng</a></li>
+                <li class="nap">
+                    <a href=""><i class="fa-solid fa-bag-shopping"></i> Mua thẻ nạp ngay!</a>
+                </li>
+                <li class="TV"><a href="">Tư vấn chọn mua</a></li>
+                <li class="KM"><a href="">Khuyến mãi</a></li>
+                <li class="Bep">
+                    <a href=""> Vào bếp</a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+    <section>
+        <div class="menu-cook ">
+            <h1>Vào bếp</h1>
+       
+        <ul>
+            <li>
+                <a href="">
+                    <img src="https://cdn.tgdd.vn/2020/10/CookCategory/Logo/mon-canh-logo-96x96.jpg" alt=""><span> Món canh</span>
+                    
+                </a>
+            </li>
+
+            <li>
+                <a href="">
+                    <img src="https://cdn.tgdd.vn/2020/10/CookCategory/Logo/mon-banh-logo-96x96-96x96.png" alt=""><span>Món bánh</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="">
+                    <img src="https://cdn.tgdd.vn/2020/10/CookCategory/Logo/mon-che-logo-96x96-96x96.jpg" alt=""><span>Món chè</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="">
+                    <img src="https://cdn.tgdd.vn/2020/06/CookCategory/Logo/mon-nuoc-logo-96x96.jpg" alt=""><span>Món nước</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="">
+                    <img src="https://cdn.tgdd.vn/2020/10/CookCategory/Logo/mon-kem-logo-96x96-96x96.jpg" alt=""><span>Món kem</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="">
+                    <img src="https://cdn.tgdd.vn/2020/06/CookCategory/Logo/meo-vao-bep-logo-96x96.jpg" alt=""><span>Mẹo vào bếp</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="">
+                    <img src="https://cdn.tgdd.vn/2020/06/CookCategory/Logo/mon-nuong-logo-96x96.jpg" alt=""><span>Món nướng</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="">
+                    <img src="https://cdn.tgdd.vn/2020/10/CookCategory/Logo/mon-chao-logo-96x96-96x96.jpg" alt=""><span>Món cháo</span>
+                </a>
+            </li>
+        </ul>
+        </div>
+        <div class="highlights">
+            <h2>
+                <i class="fa-regular fa-star"></i>
+                Món ngon nổi bật
+            </h2>
+            <ul class="cate-cook">
+                <li>
+                    <a href="">
+                        <div class="imgdish">
+                            <img src="images/bittet.jpg" alt="">
+                        </div>
+                        <strong>Cách làm bò bít tết bơ tỏi cho ngày 8/3 ngọt ngào</strong>
+                        <div class="time">
+                            <span>Dễ *Làm trong 15'</span>
+                        </div>
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="">
+                        <div class="imgdish">
+                            <img src="images/pate.jpg" alt="">
+                        </div>
+                        <strong>2 cách làm pate gan ngon tại nhà, vừa nhanh vừa dễ dàng ngon như ngoài hàng</strong>
+                        <div class="time">
+                            <span>Dễ *Làm trong 1 giờ</span>
+                        </div>
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="">
+                        <div class="imgdish">
+                            <img src="images/supga.jpg" alt="">
+                        </div>
+                        <strong>Hướng dẫn chi tiết cách nấu súp gà tại nhà ngon như ngoài hàng</strong>
+                        <div class="time">
+                            <span>Dễ *Làm trong 20'</span>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        <div class="imgdish">
+                            <img src="images/pizza.jpg" alt="">
+                        </div>
+                        <strong>Cách làm pizza xúc xích viền phô mai thơm ngon, béo ngậy tại nhà</strong>
+                        <div class="time">
+                            <span>Trung bình *Làm trong 1 giờ 30p</span>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        <div class="imgdish">
+                            <img src="images/comga.jpg" alt="">
+                        </div>
+                        <strong>Cách làm cơm gà Hội An thơm ngon chuẩn vị lại rất đơn giản</strong>
+                        <div class="time">
+                            <span>Trung bình *Làm trong 2 giờ </span>
+                        </div>
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="">
+                        <div class="imgdish">
+                            <img src="images/steak.jpg" alt="">
+                        </div>
+                        <strong>Cách làm Steak trái tim sốt nấm dành tặng mẹ,vợ,người yêu nhân ngày 8/3</strong>
+                        <div class="time">
+                            <span>Dễ *Làm trong 30' </span>
+                        </div>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+
+
+
+
+        <div class="highlights">
+            <h2>
+                <i class="fa-solid fa-utensils"></i>
+                Món Ngon Mới Nhất
+            </h2>
+            <ul class="cate-cook">
+                <li>
+                    <a href="">
+                        <div class="imgdish">
+                            <img src="images/tarttao.jpg" alt="">
+                        </div>
+                        <strong>Cách làm bánh tart táo hoa hồng ngày 8/3 ngọt ngào</strong>
+                        <div class="time">
+                            <span>Dễ *Làm trong 15'</span>
+                        </div>
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="">
+                        <div class="imgdish">
+                            <img src="images/hatsen.jpg" alt="">
+                        </div>
+                        <strong>Cách làm trà sen thơm ngon như ngoài nhà hàng</strong>
+                        <div class="time">
+                            <span>Dễ *Làm trong 1 giờ</span>
+                        </div>
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="">
+                        <div class="imgdish">
+                            <img src="images/banhtet.jpg" alt="">
+                        </div>
+                        <strong>Hướng dẫn làm bánh tét thơm ngon tại nhà dễ </strong>
+                        <div class="time">
+                            <span>Dễ *Làm trong 20'</span>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        <div class="imgdish">
+                            <img src="images/cheesecake.jpg" alt="">
+                        </div>
+                        <strong>Cách làm cheesecake mịn thơm ngon tại nhà thơm</strong>
+                        <div class="time">
+                            <span>Trung bình *Làm trong 1 giờ 30p</span>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        <div class="imgdish">
+                            <img src="images/comcuon.jpg" alt="">
+                        </div>
+                        <strong>Cách làm cơm hình bông hoa rất đơn giản tặng ngày 8/3</strong>
+                        <div class="time">
+                            <span>Trung bình *Làm trong 2 giờ </span>
+                        </div>
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="">
+                        <div class="imgdish">
+                            <img src="images/mousse.jpg" alt="">
+                        </div>
+                        <strong>Cách làm mousse hoa hồng đẹp, xinh xắn nhân ngày 8/3</strong>
+                        <div class="time">
+                            <span>Dễ *Làm trong 30' </span>
+                        </div>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+        <li class="xemthem">
+        <button> <b> XEM THÊM</b></button>
+    </li>
+    </section> 
+
+</body>
+</html>

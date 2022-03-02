@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form địa chỉ </title>
+    <style>
+        .mask{
+            width: 100%;
+            height: 100%;
+            background-color: rgb(0, 0, 0,0.3);
+        }
+        .adress-form{
+            position: fixed;
+            width:100vw ;
+            height: 100vh;
+            background: url(https://cdn.tgdd.vn/Files/2017/04/21/974581/maxresdefault1_1280x720-800-resize.jpg) no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+           
+            text-align: center;
+            color: #25a0e7;
+
+
+
+        }
+       
+        .adress-form-content{
+            width: 445px;
+            height: 565px;
+            background-color: white;
+            margin-left: 540px;
+            margin-top: 85px;
+            border-radius: 5px;
+        }
+        .adress-form-content form{
+            padding: 0 40px;
+           
+        }
+        .adress-form-content h2{
+            font-size: 30px;
+            border-bottom:2px solid #ddd ;
+        }
+        .adress-form-content form p{
+            font-size: 18px;
+        }
+        .adress-form-content form input,select{
+            height: 60px;
+            display: block;
+            width: 100%;
+            margin-top: 27px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        .adress-form-content form button{
+            margin-top: 20px;
+            height: 40px;
+            width: 80%;
+            cursor: pointer;
+            background-color: #25a0e7;
+            outline: none;
+            border: none;
+            color: rgb(13, 14, 12);
+            border-radius: 5px;
+            font-size: 17px;
+        }
+        .adress-form-content form button:hover{
+            background-color: rgba(183, 217, 224, 0.616);
+        }
+        
+
+    </style>
+</head>
+<body>
+    
+     
+      <div class="adress-form">
+      <div class="mask">
+       
+        <div class="adress-form-content">
+            
+            <h2>Chọn địa chỉ 
+                <br>
+                nhận hàng</h2>
+
+            <form action="">
+                <p>Chọn đúng địa chỉ để biết thời gian giao hàng!</p>
+                <select name="" id="">
+                    <option value="">--Chọn địa điểm</option>
+                    <option value="">Đăk Lăk</option>
+                </select>
+                <select name="" id="">
+                    <option value="">--Chọn Quận/Huyện</option>
+                    <option value="">Buôn Đôn</option>
+                </select>
+                <select name="" id="">
+                    <option value="">--Chọn Phường/Xã</option>
+                    <option value="">EaBar</option>
+                </select>
+                <input type="text" placeholder="Số nhà, Tên đường">
+                <button>Xác nhận</button>
+            </form>
+
+         
+        </div>
+    </div>
+    </div>
+</body>
+</html>
